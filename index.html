@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La tua Citazione del Giorno</title>
+    <style>
+        body { font-family: 'Georgia', serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f1ea; text-align: center; padding: 20px; }
+        .quote-box { max-width: 600px; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        h1 { font-size: 1.5rem; color: #333; line-height: 1.6; font-style: italic; }
+    </style>
+</head>
+<body>
+    <div class="quote-box">
+        <h1 id="quote">Caricamento...</h1>
+    </div>
+    <script>
+        const citazioni = [
+            "“Non c'è custode più silenzioso di un libro.” – Citazione 1",
+            "“Leggere è sognare per mano di un altro.” – Fernando Pessoa",
+            "“Un libro è un giardino che si custodisce in tasca.” – Proverbio Arabo"
+        ];
+        document.getElementById('quote').innerText = citazioni[Math.floor(Math.random() * citazioni.length)];
+    </script>
+</body>
+</html>
